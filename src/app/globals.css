@@ -8,8 +8,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +21,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.animate-wiggle {
+  animation: wiggle 2s infinite linear;
+}
+
+@keyframes wiggle {
+  0%   { transform: rotateX(-5deg) rotateY(-5deg); }
+  25%  { transform: rotateX(3deg)   rotateY(5deg); }
+  50%  { transform: rotateX(7deg)  rotateY(-6deg); }
+  75%  { transform: rotateX(0deg)   rotateY(-5deg); }
+  100% { transform: rotateX(5deg) rotateY(5deg); }
 }
