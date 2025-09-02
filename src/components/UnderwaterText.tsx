@@ -9,7 +9,7 @@ export default function UnderwaterText({ children }: UnderwaterTextProps) {
     return (
         <>
             <svg style={{ position: 'absolute', width: 0, height: 0 }}>
-                <filter id="turbulence" color-interpolation-filters="sRGB">
+                <filter id="turbulence" colorInterpolationFilters="sRGB">
                     <feTurbulence
                         numOctaves="2"
                         seed="2"
@@ -32,7 +32,7 @@ export default function UnderwaterText({ children }: UnderwaterTextProps) {
                 </filter>
             </svg>
 
-            <h1 className="text-5xl md:text-9xl font-bold text-white filter-[url(#turbulence)] will-change-[filter]">
+            <h1 className="text-5xl md:text-9xl font-bold text-white filter-[url(#turbulence)] will-change-[filter] ">
                 {children}
             </h1>
         </>
