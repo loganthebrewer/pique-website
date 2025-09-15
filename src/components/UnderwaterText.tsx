@@ -32,7 +32,7 @@ export default function UnderwaterText({ children }: UnderwaterTextProps) {
                 </filter>
             </svg>
 
-            <h1 className="text-5xl md:text-9xl font-bold text-white filter-[url(#turbulence)] will-change-[filter] ">
+            <h1 className="text-5xl md:text-9xl font-display font-black text-white filter-[url(#turbulence)] will-change-[filter] ">
                 {children}
             </h1>
         </>
