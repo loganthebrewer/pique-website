@@ -26,13 +26,13 @@ function Release({
     const content = (
         <>
             <Image
-                className={`max-sm:w-50 w-100 aspect-square ${imgClassName}`}
+                className={`max-sm:w-50 w-100 aspect-square ${imgClassName} rounded-lg drop-shadow-2xl hover:drop-shadow-white/40`}
                 src={src}
                 alt={alt ?? caption}
                 width={width}
                 height={height}
             />
-            <Typography variant="small">
+            <Typography variant="small" className="font-sans text-lg md:text-2xl z-10">
                 <strong>{caption}</strong>
             </Typography>
         </>
